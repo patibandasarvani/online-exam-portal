@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Exam Portal</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Online Exam Portal</h2>
+                <p>Take exams online with ease and confidence</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="showLogin()">Student Login</button>
+                    <button class="btn btn-secondary" onclick="showAdminLogin()">Admin Login</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="login-section" class="login-section hidden">
+            <div class="login-container">
+                <h2>Student Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="admin-login-section" class="login-section hidden">
+            <div class="login-container">
+                <h2>Admin Login</h2>
+                <form id="admin-login-form">
+                    <div class="form-group">
+                        <label for="admin-username">Admin Username:</label>
+                        <input type="text" id="admin-username" name="admin-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="admin-password">Admin Password:</label>
+                        <input type="password" id="admin-password" name="admin-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="exam-section" class="exam-section hidden">
+            <div class="exam-container">
+                <h2>Available Exams</h2>
+                <div class="exam-list">
+                    <div class="exam-card">
+                        <h3>Mathematics</h3>
+                        <p>Duration: 60 minutes</p>
+                        <p>Questions: 50</p>
+                        <button class="btn btn-primary" onclick="startExam('math')">Start Exam</button>
+                    </div>
+                    <div class="exam-card">
+                        <h3>Science</h3>
+                        <p>Duration: 90 minutes</p>
+                        <p>Questions: 75</p>
+                        <button class="btn btn-primary" onclick="startExam('science')">Start Exam</button>
+                    </div>
+                    <div class="exam-card">
+                        <h3>Computer Science</h3>
+                        <p>Duration: 120 minutes</p>
+                        <p>Questions: 100</p>
+                        <button class="btn btn-primary" onclick="startExam('cs')">Start Exam</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Exam Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
