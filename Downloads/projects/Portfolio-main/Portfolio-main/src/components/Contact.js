@@ -19,7 +19,7 @@ const Contact = ({ id }) => {
         e.preventDefault();
         setIsSubmitting(true);
         
-        const adminPhoneNumber = '7569001096';
+        const adminPhoneNumber = '8885695798';
         const message = encodeURIComponent(
             `New message from contact form:\n\nEmail: ${formData.email}\nMessage: ${formData.message}`
         );

@@ -1,12 +1,10 @@
 import React from 'react';
 import './Projects.css';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import placeholderProjectImg from '../assets/github.png';
 import examPortalImg from '../assets/student-passing-online-exam-concept-260nw-2208893063.webp';
 import campusConnectImg from '../assets/campus_connect_3_cc.webp';
 import weatherAppImg from '../assets/images.jpeg';
 import rpsGameImg from '../assets/images (2).jpeg';
-import miniAppsImg from '../assets/mini-apps.svg';
 
 const projects = [
   {

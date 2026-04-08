@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import './Certificates.css';
 // Import your local images
-import placeholderCert from '../assets/github.png';
-import infosysJavaCert from '../assets/infosys-spring-java-dsa.png';
-import staxCert from '../assets/stax-certi.png';
 import pythonCert from '../assets/python-ispringboot.png';
+import staxCert from '../assets/stax-certi.png';
 import publicspeakingCert from '../assets/publicspeaking-nptel.png';
+import genAiCert from '../assets/gen-ai-logo.jpeg';
 import oracleCert from '../assets/orcade-frontend-certi.png';
 import nptelMsCert from '../assets/nptel-ms.png';
 import javaInfoCert from '../assets/javacerti-info.png';
-import genAiCert from '../assets/gen-ai-logo.jpeg';
+import infosysJavaCert from '../assets/infosys-spring-java-dsa.png';
+import gitCert from '../assets/WhatsApp Image 2026-04-08 at 10.15.48 PM.jpeg';
+import nonTechCert1 from '../assets/WhatsApp Image 2026-04-08 at 10.14.41 PM.jpeg';
+import nonTechCert2 from '../assets/WhatsApp Image 2026-04-08 at 10.13.25 PM.jpeg';
 
 function Certificates() {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
@@ -20,68 +22,92 @@ function Certificates() {
       {
         id: 1,
         name: 'Python Programming',
-        issuer: 'iSpringBoot',
-        date: 'April 2025',
+        issuer: 'Infosysspringboot',
+       
         image: pythonCert,
         description: 'Completed Python Programming certification course'
       },
       {
         id: 2,
-        name: 'Stackhack',
-        issuer: 'Vignan University-Dept(CSE)',
-        date: 'October 2024',
+        name: 'Staxtechh',
+        issuer: 'Staxtech',
+      
         image: staxCert,
-        description: 'Participated in a continuous 48 hours hackathon called Stackhack'
+    
       },
       {
         id: 3,
         name: 'Public Speaking',
         issuer: 'NPTEL',
-        date: 'December 2022',
         image: publicspeakingCert,
         description: 'Certified in Public Speaking course offered by NPTEL'
       },
       {
         id: 4,
         name: 'Introduction to Generative AI',
-        issuer: 'Google Cloud',
-        date: 'September 2024',
+        issuer: 'Google',
+  
         image: genAiCert,
-        description: 'Completed 45-hour online course in Generative AI offered by Google Cloud'
+        description: 'Generative AI '
       },
       {
         id: 5,
         name: 'Data Structures and Algorithms using Java',
         issuer: 'Infosys Springboard',
-        date: 'December 2024',
+       
         image: infosysJavaCert,
         description: 'Completed the Infosys Springboard course on Data Structures and Algorithms using Java'
       },
       {
         id: 6,
         name: 'Foundations of Frontend Development',
-        issuer: 'Oracle Academy',
-        date: 'October 2024',
+        issuer: 'Oracad Academy',
+    
         image: oracleCert,
         description: 'Certified in Oracle Frontend Development course'
       },
       {
         id: 7,
-        name: 'Microsoft Azure',
+        name: 'principles of managment',
         issuer: 'NPTEL',
-        date: 'August 2024',
         image: nptelMsCert,
-        description: 'Certified in Microsoft Azure course offered by NPTEL'
+        description: 'Certified in  NPTEL'
       },
       {
         id: 8,
         name: 'Core Java',
         issuer: 'International Institute',
-        date: 'July 2024',
+
         image: javaInfoCert,
-        description: 'Certified in comprehensive Java programming course'
+        description: 'Certified in Core Java programming'
       },
+      {
+        id: 9,
+        name: 'Mastering Git for Efficient Version Control',
+        issuer: 'PATIBANDA SARVANI',
+
+        image: gitCert,
+        description: 'Completed comprehensive Git version control course'
+      }
     ],
+    nonTechnical: [
+      {
+        id: 1,
+        name: 'Communication Skills',
+        issuer: 'Training Institute',
+        date: '2025',
+        image: nonTechCert1,
+        description: 'Completed professional communication skills certification'
+      },
+      {
+        id: 2,
+        name: 'Leadership Development',
+        issuer: 'Professional Academy',
+        date: '2025',
+        image: nonTechCert2,
+        description: 'Certified in leadership and team management skills'
+      }
+    ]
   };
   
   // Duplicate certificates for seamless looping
@@ -110,6 +136,33 @@ function Certificates() {
               {duplicatedTechnical.map((cert, index) => (
                 <div 
                   key={`tech-${cert.id}-${index}`} 
+                  className="certificate-card"
+                  onClick={() => openCertificate(cert)}
+                  onMouseEnter={() => setIsPaused(true)}
+                  onMouseLeave={() => !selectedCertificate && setIsPaused(false)}
+                >
+                  <div className="certificate-image">
+                    <img src={cert.image} alt={cert.name} />
+                  </div>
+                  <div className="certificate-info">
+                    <h4>{cert.name}</h4>
+                    <p className="issuer">{cert.issuer}</p>
+                    <p className="date">{cert.date}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        
+        {/* Non-Technical Certificates */}
+        <div className="category">
+          <h3 className="category-title">Non-Technical Certifications</h3>
+          <div className={`scroller-container ${isPaused ? 'paused' : ''}`}>
+            <div className="scroller">
+              {certificateData.nonTechnical.map((cert, index) => (
+                <div 
+                  key={`non-tech-${cert.id}-${index}`} 
                   className="certificate-card"
                   onClick={() => openCertificate(cert)}
                   onMouseEnter={() => setIsPaused(true)}
