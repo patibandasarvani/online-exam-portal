@@ -22,39 +22,40 @@ function Certificates() {
       {
         id: 1,
         name: 'Python Programming',
-        issuer: 'Infosysspringboot',
-       
+        issuer: 'Infosys SpringBoot',
+        date: 'April 2025',
         image: pythonCert,
         description: 'Completed Python Programming certification course'
       },
       {
         id: 2,
-        name: 'Staxtechh',
-        issuer: 'Staxtech',
-      
+        name: 'Stackhack',
+        issuer: 'Vignan University-Dept(CSE)',
+        date: 'October 2024',
         image: staxCert,
-    
+        description: 'Participated in a continuous 48 hours hackathon called Stackhack'
       },
       {
         id: 3,
         name: 'Public Speaking',
         issuer: 'NPTEL',
+        date: 'March 2025',
         image: publicspeakingCert,
         description: 'Certified in Public Speaking course offered by NPTEL'
       },
       {
         id: 4,
         name: 'Introduction to Generative AI',
-        issuer: 'Google',
-  
+        issuer: 'Google Cloud',
+        date: 'March 2025',
         image: genAiCert,
-        description: 'Generative AI '
+        description: 'Completed 45-hour online course in Generative AI offered by Google Cloud'
       },
       {
         id: 5,
         name: 'Data Structures and Algorithms using Java',
         issuer: 'Infosys Springboard',
-       
+        date: 'February 2025',
         image: infosysJavaCert,
         description: 'Completed the Infosys Springboard course on Data Structures and Algorithms using Java'
       },
@@ -62,22 +63,23 @@ function Certificates() {
         id: 6,
         name: 'Foundations of Frontend Development',
         issuer: 'Oracad Academy',
-    
+        date: 'January 2025',
         image: oracleCert,
         description: 'Certified in Oracle Frontend Development course'
       },
       {
         id: 7,
-        name: 'principles of managment',
+        name: 'Principles of Management',
         issuer: 'NPTEL',
+        date: 'December 2024',
         image: nptelMsCert,
-        description: 'Certified in  NPTEL'
+        description: 'Certified in Principles of Management course offered by NPTEL'
       },
       {
         id: 8,
         name: 'Core Java',
-        issuer: 'Infosysspringboot',
-
+        issuer: 'International Institute',
+        date: 'March 2025',
         image: javaInfoCert,
         description: 'Certified in Core Java programming'
       },
@@ -85,7 +87,7 @@ function Certificates() {
         id: 9,
         name: 'Mastering Git for Efficient Version Control',
         issuer: 'PATIBANDA SARVANI',
-
+        date: 'March 2025',
         image: gitCert,
         description: 'Completed comprehensive Git version control course'
       }
@@ -102,7 +104,7 @@ function Certificates() {
       {
         id: 2,
         name: 'Leadership Development',
-        issuer: 'vignaninstitue',
+        issuer: 'Vignan Institute',
         date: '2025',
         image: nonTechCert2,
         description: 'Certified in leadership and team management skills'
