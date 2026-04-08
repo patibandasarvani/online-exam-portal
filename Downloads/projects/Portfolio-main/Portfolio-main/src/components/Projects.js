@@ -44,7 +44,7 @@ const projects = [
     title: 'Personal Portfolio Website',
     description: 'A professional portfolio website showcasing my skills, projects, certifications, and contact information. Built with React featuring responsive design, certificate galleries, project showcases, and WhatsApp integration for contact.',
     tags: ['React', 'JavaScript', 'CSS', 'Responsive Design', 'Portfolio'],
-    github: 'https://github.com/patibandasarvani/Portfolio-main',
+    github: 'https://github.com/patibandasarvani/portfolio-sarvani',
     live: 'https://portfolio-sarvani.vercel.app',
     image: portfolioImg
   },
