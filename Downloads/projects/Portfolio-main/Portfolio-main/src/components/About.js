@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './About.css';
-import profileImage from '../assets/teddy-profile-pic.jpeg';
 
 function About() {
   useEffect(() => {
@@ -28,13 +27,6 @@ function About() {
         
         <div className="about-content">
           <div className="about-text">
-            <div className="profile-section">
-              <img src={profileImage} alt="Patibanda Sarvani" className="profile-image" />
-              <div className="profile-info">
-                <h3>Patibanda Sarvani</h3>
-                <p>B.Tech CSE Student | Developer</p>
-              </div>
-            </div>
             <p>
               I'm a pre-final year B.Tech student at Vignan's University studying Computer Science and Engineering. I've built a solid foundation in software development with expertise in C, DBMS, and Web Development. Currently, I'm expanding my skillset by learning Certified Ethical Hacking and Cloud Practitioner concepts. My journey in technology is driven by curiosity and passion for solving complex problems. I believe in the power of continuous learning and staying adaptable in the fast-evolving tech landscape. Every day presents an opportunity to grow, and I'm committed to making the most of it.
             </p>
