@@ -5,6 +5,7 @@ import examPortalImg from '../assets/student-passing-online-exam-concept-260nw-2
 import campusConnectImg from '../assets/campus_connect_3_cc.webp';
 import weatherAppImg from '../assets/images.jpeg';
 import rpsGameImg from '../assets/images (2).jpeg';
+import portfolioImg from '../assets/Screenshot 2026-04-08 231211.png';
 
 const projects = [
   {
@@ -45,7 +46,7 @@ const projects = [
     tags: ['React', 'JavaScript', 'CSS', 'Responsive Design', 'Portfolio'],
     github: 'https://github.com/patibandasarvani/Portfolio-main',
     live: 'https://portfolio-sarvani.vercel.app',
-    image: examPortalImg
+    image: portfolioImg
   },
 ];
 
