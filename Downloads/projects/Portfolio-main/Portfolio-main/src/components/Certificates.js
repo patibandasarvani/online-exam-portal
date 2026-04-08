@@ -76,7 +76,7 @@ function Certificates() {
       {
         id: 8,
         name: 'Core Java',
-        issuer: 'International Institute',
+        issuer: 'Infosysspringboot',
 
         image: javaInfoCert,
         description: 'Certified in Core Java programming'
@@ -94,7 +94,7 @@ function Certificates() {
       {
         id: 1,
         name: 'Communication Skills',
-        issuer: 'Training Institute',
+        issuer: 'Vignan Institute',
         date: '2025',
         image: nonTechCert1,
         description: 'Completed professional communication skills certification'
@@ -102,7 +102,7 @@ function Certificates() {
       {
         id: 2,
         name: 'Leadership Development',
-        issuer: 'Professional Academy',
+        issuer: 'vignaninstitue',
         date: '2025',
         image: nonTechCert2,
         description: 'Certified in leadership and team management skills'

@@ -28,6 +28,7 @@ const projects = [
     description: 'A weather application that provides real-time weather information for any location. Features include current weather conditions, forecasts, and responsive design for optimal user experience across devices.',
     tags: ['JavaScript', 'API', 'Weather', 'Responsive Design'],
     github: 'https://github.com/patibandasarvani/weather--app',
+    live: 'https://patibandasarvani.github.io/weather--app/',
     image: rpsGameImg
   },
   {
@@ -35,6 +36,7 @@ const projects = [
     description: 'An interactive Rock-Paper-Scissors game with engaging UI and smooth animations. Demonstrates game logic implementation and user interaction handling in web development.',
     tags: ['JavaScript', 'HTML', 'CSS', 'Game Development', 'Interactive'],
     github: 'https://github.com/patibandasarvani/rock-paper-scissor',
+    live: 'https://patibandasarvani.github.io/rock-paper-scissor/',
     image: weatherAppImg
   },
   ];

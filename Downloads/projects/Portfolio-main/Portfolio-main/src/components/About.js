@@ -28,7 +28,7 @@ function About() {
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a pre-final year B.Tech student at Vignan's University studying Computer Science and Engineering. I've built a solid foundation in software development with expertise in C, DBMS, and Web Development. Currently, I'm expanding my skillset by learning Certified Ethical Hacking and Cloud Practitioner concepts. My journey in technology is driven by curiosity and passion for solving complex problems. I believe in the power of continuous learning and staying adaptable in the fast-evolving tech landscape. Every day presents an opportunity to grow, and I'm committed to making the most of it.
+            Pre-final year B.Tech Computer Science student at Vignan's University with solid expertise in C, DBMS, and Web Development. Skilled in problem-solving and developing efficient, scalable applications. Driven by curiosity and a growth mindset, with a strong commitment to continuous learning and applying technology to solve real-world challenges. Currently expanding my skillset in Certified Ethical Hacking and Cloud Practitioner concepts to build comprehensive, secure solutions.
             </p>
           </div>
           
