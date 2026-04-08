@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  background-color: #0c0c1d;
+  color: #fff;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: 80px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove list styles */
+ul {
+  list-style: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    padding-top: 70px;
+  }
+}
